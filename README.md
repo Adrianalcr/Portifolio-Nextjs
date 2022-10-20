@@ -22,9 +22,9 @@ A portfolio model was developed in react.js, typescript and next.js, with other 
 <br/>
 <div align="center">
     <h1 color="#ffff" >Initial project config with Next Js, Typescript, ESlint, Prettier, Styled-Components, Vercel and Prismic CMS. </h1>
-    </br>
+  
 </div>
-
+</br>
 <!-- ABOUT THE PROJECT -->
 
 # <strong>About the project</strong>
@@ -60,23 +60,13 @@ cd ecommerce-app
 npm install react-icons
 npm install styled-components
 npm install react-router-dom --save
-npm start // run the project
+npm start // run dev the project
 
 
 
 
 
 
-<!--INSPIRATION-->
-
-# <strong>Inpiration</strong>
-
- **Repo GB Dev**
-
-[Github](https://github.com/GBDev13) - **https://github.com/GBDev13** </br>
-[Youtube](https://www.youtube.com/c/GBDev) - **https://www.youtube.com/c/GBDev**
-
-</br>
 
 <!-- CONTACT -->
 </br>
