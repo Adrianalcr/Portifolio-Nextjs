@@ -39,7 +39,7 @@ Use and abuse!
 
 ## Details Project
 1- React.js, Typescript e Next.js...</br>
-2- Portfolio template one page;</br>
+2- Portfolio template all pages;</br>
 3- Presentation Profile; </br>
 4- Experiences; </br>
 5- Projects Carousel Images Slider;</br>
@@ -55,13 +55,13 @@ Use and abuse!
 
 ## Commands
 
-npx or npm create-react-app ecommerce-app
-cd ecommerce-app
-npm install react-icons
-npm install styled-components
-npm install react-router-dom --save
-npm start // run dev the project
-
+npx or npm create-react-app ecommerce-app</br>
+cd ecommerce-app</br>
+yarn install react-icons</br>
+yarn install styled-components</br>
+yarn install react-router-dom --save</br>
+yarn start // run dev the project</br>
+yarn
 
 
 
