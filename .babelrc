@@ -1,0 +1,18 @@
+{
+    "presets": ["next/babel"],
+    // this is what you're adding:
+    "env": {
+      "test": {
+        "presets": [
+          [
+            "next/babel",
+            {
+              "styled-jsx": {
+                "babel-test": true
+              }
+            }
+          ]
+        ]
+      }
+    }
+}

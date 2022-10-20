@@ -1,0 +1,25 @@
+{
+  "id": "mock-doc-id",
+  "url": null,
+  "type": "projetos",
+  "href": null,
+  "tags": [],
+  "first_publication_date": "1970-01-01T00:00:01+0000",
+  "last_publication_date": "1970-01-01T00:00:01+0000",
+  "slugs": [],
+  "linked_documents": [],
+  "lang": "en-us",
+  "alternate_languages": [],
+  "data": {
+    "projeto1": {
+      "dimensions": {
+        "width": 350,
+        "height": 353
+      },
+      "alt": null,
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1488998527040-85054a85150e"
+    },
+    "slices": []
+  }
+}
