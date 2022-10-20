@@ -1,9 +1,0 @@
-{
-  "apiEndpoint": "https://projetonextjs.prismic.io/api/v2",
-  "libraries": [
-    "@/slices"
-  ],
-  "_latest": "0.3.0",
-  "framework": "previousNext",
-  "generateTypes": false
-}
