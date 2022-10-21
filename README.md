@@ -10,15 +10,16 @@ A portfolio model was developed in react.js, typescript and next.js, with other 
   <img src="/img/screen2.png" width="350" alt="Screenshot">
 </a>
 
-# Links Úteis
 <!--INSTALLATION-->
-# <strong>Installations</strong>
+
+# Links Úteis <strong>Installations</strong>
 [![Next.js](https://img.shields.io/badge/NextJs-blue)](https://nextjs.org/)
 [![React.js](https://img.shields.io/badge/-ReactJs-blue)](https://pt-br.reactjs.org/)
 [![Typescript](https://img.shields.io/badge/-Typescript-blue)](https://www.typescriptlang.org/)
-[![Prismic](https://prismic.io/badge/-code-blue)](https://prismic.io/docs/)
+[![Prismic](https://prismic.io/badge/-Typescript-blue)](https://prismic.io/docs/)
 
 <br/>
+
 <div align="center">
     <h1 color="#ffff" >Initial project config with Next Js, Typescript, ESlint, Prettier, Styled-Components, Vercel and Prismic CMS. </h1>
   
@@ -28,9 +29,7 @@ A portfolio model was developed in react.js, typescript and next.js, with other 
 
 # <strong>About the project</strong>
 
-This is a <a href="https://github.com/renanlido/initial_template_next">template</a> for initial 
-
-configuration for projects based in Next Js.
+This is a <a href="https://github.com/renanlido/initial_template_next">template</a> for initial configuration for projects based in Next Js.
 
 A portfolio was created an React.js, Typescript, Next.js for study purposes.
 
@@ -52,8 +51,8 @@ Distribuído sob a licença MIT. Veja `LICENSE` para mais informações.
 4- Experiences; </br>
 5- Projects Carousel Images Slider;</br>
 6- Skills Carousel Images Slider; </br>
-7-
-8-
+7-</br>
+8-</br>
 9- Contact Form;</br>
 10- Burger Menu;</br>
 11- Fully responsive will support all the devices;</br>
@@ -62,20 +61,22 @@ Distribuído sob a licença MIT. Veja `LICENSE` para mais informações.
 
 
 ## Commands
-npx create-next-app@latest --typescript</br>
+npx create-next-app@latest --typescript
 # or
-yarn create next-app --typescript</br>
+yarn create next-app --typescript
 # or
-pnpm create next-app --typescript</br>
+npm create next-app --typescript
 
 # After the installation is complete:
 
 Run npm run dev or yarn dev or pnpm dev to start the development server on http://localhost:3000</br>
 Visit http://localhost:3000 to view your application</br>
-Edit pages/index.js and see the updated result in your browser
+Edit pages/index.js and see the updated result in your browser.
 </br>
 
 # Open package.json and add the following scripts:
+Open package.json and see the following scripts, use the start command.
+</br>
 
 <div>
 <code>
