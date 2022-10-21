@@ -77,21 +77,13 @@ pnpm add next react react-dom</br>
 
 <div>
 <code>
-  "scripts": {
-  "dev": "next dev",
-  "build": "next build",
-  "start": "next start",
-  "lint": "next lint"
+  "scripts": {</br>
+  "dev": "next dev",</br>
+  "build": "next build",</br>
+  "start": "next start",</br>
+  "lint": "next lint"</br>
   }
 </code>
-<style>
-  code {
-    background-color: #eee;
-    border-radius: 3px;
-    font-family: courier, monospace;
-    padding: 0 3px;
-  }
-</style>
 </div>
 
 <!-- CONTACT -->
