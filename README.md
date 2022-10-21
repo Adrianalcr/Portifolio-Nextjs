@@ -16,9 +16,8 @@ A portfolio model was developed in react.js, typescript and next.js, with other 
 [![Next.js](https://img.shields.io/badge/NextJs-blue)](https://nextjs.org/)
 [![React.js](https://img.shields.io/badge/-ReactJs-blue)](https://pt-br.reactjs.org/)
 [![Typescript](https://img.shields.io/badge/-Typescript-blue)](https://www.typescriptlang.org/)
-[![Prismic](https://prismic.io/badge/-Prismic-blue)](https://prismic.io/docs/)
+[![Prismic](https://prismic.io/badge/-code-blue)](https://prismic.io/docs/)
 
-<!--LOGO-->
 <br/>
 <div align="center">
     <h1 color="#ffff" >Initial project config with Next Js, Typescript, ESlint, Prettier, Styled-Components, Vercel and Prismic CMS. </h1>
@@ -29,7 +28,9 @@ A portfolio model was developed in react.js, typescript and next.js, with other 
 
 # <strong>About the project</strong>
 
-This is a template for initial configuration for projects based in Next Js.
+This is a <a href="https://github.com/renanlido/initial_template_next">template</a> for initial 
+
+configuration for projects based in Next Js.
 
 A portfolio was created an React.js, Typescript, Next.js for study purposes.
 
@@ -37,7 +38,14 @@ Use and abuse!
 
 </br>
 
+# **License**
+
+Distribuído sob a licença MIT. Veja `LICENSE` para mais informações.
+
+</br>
+
 ## Details Project
+
 1- React.js, Typescript e Next.js...</br>
 2- Portfolio template all pages;</br>
 3- Presentation Profile; </br>
@@ -67,12 +75,6 @@ Visit http://localhost:3000 to view your application</br>
 Edit pages/index.js and see the updated result in your browser
 </br>
 
-npm install next react react-dom</br>
-# or
-yarn add next react react-dom</br>
-# or
-pnpm add next react react-dom</br>
-
 # Open package.json and add the following scripts:
 
 <div>
@@ -85,6 +87,10 @@ pnpm add next react react-dom</br>
   }
 </code>
 </div>
+
+
+</br>
+
 
 <!-- CONTACT -->
 </br>
