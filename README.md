@@ -54,19 +54,45 @@ Use and abuse!
 
 
 ## Commands
+npx create-next-app@latest --typescript</br>
+# or
+yarn create next-app --typescript</br>
+# or
+pnpm create next-app --typescript</br>
 
-npx or npm create-react-app ecommerce-app</br>
-cd ecommerce-app</br>
-yarn install react-icons</br>
-yarn install styled-components</br>
-yarn install react-router-dom --save</br>
-yarn start // run dev the project</br>
-yarn
+# After the installation is complete:
 
+Run npm run dev or yarn dev or pnpm dev to start the development server on http://localhost:3000</br>
+Visit http://localhost:3000 to view your application</br>
+Edit pages/index.js and see the updated result in your browser
+</br>
 
+npm install next react react-dom</br>
+# or
+yarn add next react react-dom</br>
+# or
+pnpm add next react react-dom</br>
 
+# Open package.json and add the following scripts:
 
-
+<div>
+<code>
+  "scripts": {
+  "dev": "next dev",
+  "build": "next build",
+  "start": "next start",
+  "lint": "next lint"
+  }
+</code>
+<style>
+  code {
+    background-color: #eee;
+    border-radius: 3px;
+    font-family: courier, monospace;
+    padding: 0 3px;
+  }
+</style>
+</div>
 
 <!-- CONTACT -->
 </br>

@@ -2,10 +2,11 @@ import { GetStaticPaths, GetStaticProps } from 'next';
 import Prismic from '@prismicio/client';
 import { useRouter } from 'next/router';
 import Head from 'next/head';
+import { getPrismicClient } from '../../../services/prismic';
+import { ProjetoContainer } from '../../../styles/ProjetoStyles';
+
 //import BannerProjeto from '../../../components/BannerProjeto';
 import Header from '../../../components/Header';
-//import { getPrismicClient } from '../../../services/prismic';
-//import { ProjetoContainer } from '../../../styles/ProjetoStyles';
 import LoadingScreen from '../../../components/LoadingScreen';
 
 interface IProjeto {
