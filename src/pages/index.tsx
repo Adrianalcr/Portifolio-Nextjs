@@ -1,6 +1,7 @@
 //@refresh reset
 import { GetStaticProps } from 'next';
 import Prismic from '@prismicio/client';
+import { components } from '../slices';
 import { useEffect } from 'react';
 import Aos from 'aos';
 import Head from 'next/head';
@@ -15,8 +16,9 @@ import Skills from '../components/Skills';
 import FormContact from '../components/FormContact';
 import Footer from '../components/Footer';
 import ScrollUp from '../components/ScrollUp';
-import Projeto from './projetos/[slug]';
+import Projeto from '../components/projeto';
 import Conhecimentos from '../components/Conhecimentos';
+
 
 interface IProjeto{
   slug: string;
@@ -31,7 +33,7 @@ interface HomeProps{
   projetos: IProjeto[];
 }
 
-export default function Home({ projetos }: HomeProps) {
+export default function Home({ projeto }: HomeProps) {
   return (
     <HomeContainer>
       <Header/>
@@ -40,7 +42,7 @@ export default function Home({ projetos }: HomeProps) {
         <HomeHero/>
         <Experiencias/>
         <Projetos/>
-        <Projeto projetos={projetos}/>
+        <Projeto projetos={projeto}/>
         <Skills/>
         <Conhecimentos/>
         <FormContact/>
@@ -59,7 +61,7 @@ export const getStaticProps:GetStaticProps = async () =>{
     [Prismic.Predicates.at('document.type', 'pro')],
     { orderings: '[document.first_publication_date desc]'}
   );
-  const projetos = projectResponse.reults.map(projeto => ({ 
+  const projeto = projectResponse.reults.map(projeto => ({ 
     slug: projeto.uid,
     title: projeto.data.title,
     type: projeto.data.type,
@@ -69,7 +71,7 @@ export const getStaticProps:GetStaticProps = async () =>{
   })); 
 
   return{
-    props: {projetos},
+    props: {projeto},
     revalidate: 86400
   };
 };
