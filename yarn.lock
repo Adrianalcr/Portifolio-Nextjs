@@ -3009,7 +3009,7 @@
   "resolved" "https://registry.npmjs.org/create-require/-/create-require-1.1.1.tgz"
   "version" "1.1.1"
 
-"cross-fetch@^3.0.5", "cross-fetch@3.1.5":
+"cross-fetch@3.1.5":
   "integrity" "sha512-lvb1SBsI0Z7GDwmuid+mU3kWVBwTVUbe7S0H52yaaAdQOXq2YktTCZdlAcNKFzE6QtRz0snpw9bNiPeOIkkQvw=="
   "resolved" "https://registry.npmjs.org/cross-fetch/-/cross-fetch-3.1.5.tgz"
   "version" "3.1.5"
@@ -6397,13 +6397,6 @@
   "integrity" "sha512-ujppO+MkdPqoVINuDFDRLClm7D78qbDt0/NR+wp5FqEZOoTNAjPHWj17QRhu7geIHJfcNhRk1XVQmF8Bp3ye+g=="
   "resolved" "https://registry.npmjs.org/prettier/-/prettier-2.7.1.tgz"
   "version" "2.7.1"
-
-"prismic-javascript@^3.0.2":
-  "integrity" "sha512-9RpituEVE/eZAlj+vUVy61z2IQJdL0zRYuy+IHdiUA7/37zoiCE/Z0AbI0zAWyi5UDXizgQ2TuQTLkOm62KGwA=="
-  "resolved" "https://registry.npmjs.org/prismic-javascript/-/prismic-javascript-3.0.2.tgz"
-  "version" "3.0.2"
-  dependencies:
-    "cross-fetch" "^3.0.5"
 
 "prismic-ts-codegen@^0.1.5":
   "integrity" "sha512-7yd5VjMl/K8TDQFDbZbH7NgvCct9F5YKvWsEbNwPpMFb2lJPmDiCCKvfGGM5STpLAQc72+YpL8kDPy/UfwVGxg=="

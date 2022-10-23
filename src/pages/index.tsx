@@ -4,6 +4,7 @@ import Prismic from '@prismicio/client';
 import { useEffect } from 'react';
 import Aos from 'aos';
 import Head from 'next/head';
+
 import { HomeContainer } from '../styles/HomeStyles';
 
 import Header from '../components/Header';

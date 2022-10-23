@@ -37,12 +37,6 @@ Use and abuse!
 
 </br>
 
-# **License**
-
-Distribuído sob a licença MIT. Veja `LICENSE` para mais informações.
-
-</br>
-
 ## Details Project
 
 1- React.js, Typescript e Next.js...</br>
