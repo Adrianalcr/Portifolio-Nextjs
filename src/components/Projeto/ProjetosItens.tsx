@@ -14,7 +14,7 @@ function ProjetosItens({ skills, titulo2 }: ProjetosProps) {
                 <div>
                     <Image src={avatar} alt="Avatar"/>
                     <h1>{skills}</h1>
-                    <p>{titulo2}</p>
+                    <p><a href="#" target="_blank" >{titulo2}</a></p>
                 </div>
             </ItemContainer>
         </>

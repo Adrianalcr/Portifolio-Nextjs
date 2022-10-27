@@ -8,7 +8,7 @@ function Projetos() {
     return (
         <>
             <Container data-aos="fade-up">
-                <TitulosSec titulo1="Portifólio" descricao1="Projetos" />
+                <TitulosSec titulo1="Projetos" descricao1="Desenvolvidos" />
                 <section>
                     <Carousel  itemsToShow={4} autoPlaySpeed={1500} itemPadding={[0, 10]} >
                         <ProjetosItens skills="Cliente1" titulo2="www.seucliente.com.br" />
