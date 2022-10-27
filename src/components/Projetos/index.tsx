@@ -1,26 +1,43 @@
-import Carousel from 'react-elastic-carousel';
+import Link from 'next/link';
 import TitulosSec from '../TitulosSec';
-import ProjetosItens from './ProjetosItens';
+import ProjetoItem from './ProjetoItem';
 import { Container } from './styles';
 
+interface IProjeto {
+  slug: string;
+  title: string;
+  type: string;
+  description: string;
+  link: string;
+  thumbnail: string;
+}
 
-function Projetos() {
-    return (
-        <>
-            <Container>
-                <TitulosSec titulo1="Portifólio" descricao1="Projetos" />
-                <section>
-                    <Carousel  itemsToShow={4} autoPlaySpeed={1500} itemPadding={[0, 10]} >
-                        <ProjetosItens skills="Cliente1" titulo2="www.seucliente.com.br" />
-                        <ProjetosItens skills="Cliente2" titulo2="www.seucliente.com.br" />
-                        <ProjetosItens skills="Cliente3" titulo2="www.seucliente.com.br" />
-                        <ProjetosItens skills="Cliente4" titulo2="www.seucliente.com.br" />
-                        <ProjetosItens skills="Cliente5" titulo2="www.seucliente.com.br" />
-                        <ProjetosItens skills="Cliente6" titulo2="www.seucliente.com.br" />
-                    </Carousel>
-                </section>                
-            </Container>
-        </>
-    )
+interface ProjetosProps {
+  projetos: IProjeto[];
+}
+
+function Projetos({ projetos }: ProjetosProps) {
+  return (
+    <Container>
+      <TitulosSec titulo1="Ultimos Projetos" />
+
+      <section>
+        {projetos?.map(projeto => (
+          <ProjetoItem
+            key={projeto.slug}
+            img={projeto.thumbnail}
+            title={projeto.title}
+            type={projeto.type}
+            slug={projeto.slug}
+          />
+        ))}
+      </section>
+      <button type="button">
+        <Link href="/projetos">
+          <a>Ver todos os projetos</a>
+        </Link>
+      </button>
+    </Container>
+  );
 }
 export default Projetos;

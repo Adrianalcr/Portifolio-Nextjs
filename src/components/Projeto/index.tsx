@@ -1,43 +1,26 @@
-import Link from 'next/link';
+import Carousel from 'react-elastic-carousel';
 import TitulosSec from '../TitulosSec';
-import ProjetoItem from './ProjetoItem';
+import ProjetosItens from './ProjetosItens';
 import { Container } from './styles';
 
-interface IProjeto {
-  slug: string;
-  title: string;
-  type: string;
-  description: string;
-  link: string;
-  thumbnail: string;
-}
 
-interface ProjetoProps {
-  projetos: IProjeto[];
+function Projetos() {
+    return (
+        <>
+            <Container data-aos="fade-up">
+                <TitulosSec titulo1="Portifólio" descricao1="Projetos" />
+                <section>
+                    <Carousel  itemsToShow={4} autoPlaySpeed={1500} itemPadding={[0, 10]} >
+                        <ProjetosItens skills="Cliente1" titulo2="www.seucliente.com.br" />
+                        <ProjetosItens skills="Cliente2" titulo2="www.seucliente.com.br" />
+                        <ProjetosItens skills="Cliente3" titulo2="www.seucliente.com.br" />
+                        <ProjetosItens skills="Cliente4" titulo2="www.seucliente.com.br" />
+                        <ProjetosItens skills="Cliente5" titulo2="www.seucliente.com.br" />
+                        <ProjetosItens skills="Cliente6" titulo2="www.seucliente.com.br" />
+                    </Carousel>
+                </section>                
+            </Container>
+        </>
+    )
 }
-
-function Projeto({ projeto }: ProjetoProps) {
-  return (
-    <Container>
-      <TitulosSec title="Ultimos Projetos" />
-
-      <section>
-        {projeto.slice(0, 3).map(projeto => (
-          <ProjetoItem
-            key={projeto.slug}
-            img={projeto.thumbnail}
-            title={projeto.title}
-            type={projeto.type}
-            slug={projeto.slug}
-          />
-        ))}
-      </section>
-      <button type="button">
-        <Link href="/projetos">
-          <a>Ver todos os projetos</a>
-        </Link>
-      </button>
-    </Container>
-  );
-}
-export default Projeto;
+export default Projetos;

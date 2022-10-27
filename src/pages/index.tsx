@@ -11,14 +11,16 @@ import { HomeContainer } from '../styles/HomeStyles';
 import Header from '../components/Header';
 import HomeHero from '../components/HomeHero';
 import Experiencias from '../components/Experiencias';
-import Projetos from '../components/Projetos';
-import Skills from '../components/Skills';
+import Projetos from '../components/Projeto';
+import Equipe from '../components/Equipe';
 import FormContact from '../components/FormContact';
 import Footer from '../components/Footer';
 import ScrollUp from '../components/ScrollUp';
-import Projeto from '../components/projeto';
+import Projeto from '../components/Projetos';
 import Conhecimentos from '../components/Conhecimentos';
 
+import 'aos/dist/aos.css';
+import { getPrismicClient } from '../services/prismic';
 
 interface IProjeto{
   slug: string;
@@ -34,6 +36,10 @@ interface HomeProps{
 }
 
 export default function Home({ projeto }: HomeProps) {
+  useEffect(() => {
+    Aos.init({ duration: 1500 });
+  }, []);
+
   return (
     <HomeContainer>
       <Header/>
@@ -43,7 +49,7 @@ export default function Home({ projeto }: HomeProps) {
         <Experiencias/>
         <Projetos/>
         <Projeto projetos={projeto}/>
-        <Skills/>
+        <Equipe/>
         <Conhecimentos/>
         <FormContact/>
       </main>
@@ -55,23 +61,27 @@ export default function Home({ projeto }: HomeProps) {
 }
 
 //Usando Prismic CMS
-export const getStaticProps:GetStaticProps = async () =>{
+export const getStaticProps: GetStaticProps = async () => {
   const prismic = getPrismicClient();
+
   const projectResponse = await prismic.query(
     [Prismic.Predicates.at('document.type', 'pro')],
-    { orderings: '[document.first_publication_date desc]'}
+    { orderings: '[document.first_publication_date desc]' }
   );
-  const projeto = projectResponse.reults.map(projeto => ({ 
+
+  const projetos = projectResponse.results.map(projeto => ({
     slug: projeto.uid,
     title: projeto.data.title,
     type: projeto.data.type,
     description: projeto.data.description,
     link: projeto.data.link.url,
     thumbnail: projeto.data.thumbnail.url
-  })); 
+  }));
 
-  return{
-    props: {projeto},
+  return {
+    props: {
+      projetos
+    },
     revalidate: 86400
   };
 };

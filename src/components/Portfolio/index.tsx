@@ -6,7 +6,7 @@ import { Container } from './styles';
 function Portfolio() {
     return (
         <>
-            <Container>
+            <Container data-aos="fade-up">
                 <TitulosSec titulo1="Ultimos Projetos" />
 
                 <section>

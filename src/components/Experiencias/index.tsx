@@ -6,7 +6,7 @@ import { Container } from './styles';
 function Experiencias() {
     return(
         <>
-            <Container>
+            <Container data-aos="fade-up">
                 <TitulosSec titulo1=" 7 Anos"  descricao1="de experiencia"/>
 
                 <section>

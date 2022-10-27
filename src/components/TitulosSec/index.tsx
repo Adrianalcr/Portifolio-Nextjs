@@ -8,7 +8,7 @@ interface TitulosSecProps{
 
 function TitulosSec({titulo1, descricao1}: TitulosSecProps) {
     return (
-        <Container>
+        <Container  data-aos="fade-right">
             <div>
                 <h1>#{titulo1}</h1>
                 {descricao1 && <h2>{descricao1}</h2>}

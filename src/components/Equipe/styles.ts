@@ -14,6 +14,9 @@ export const Container = styled.section`
   }
   
   img{
+    background-color: ${({ theme }) => theme.white};
+    border-radius: 50%;
+    border: 2px solid #fff;
     width: 25em;
     objet-fit: cover;
   }

@@ -9,6 +9,7 @@ const theme = {
   textLight: '#C4C4C4',
   inputBackground: '#281a36',
   border: '#fc0553',
+  white: '#fff',
   error: '#d45d5d'
 };
 

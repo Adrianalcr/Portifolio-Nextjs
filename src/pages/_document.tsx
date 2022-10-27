@@ -7,6 +7,9 @@ import Document, {
   NextScript
 } from 'next/document';
 
+import Image from 'next/image';
+import favicon from '../assets/img/favicon.ico';
+
 import { ServerStyleSheet } from 'styled-components';
 
 export default class MyDocument extends Document {
@@ -48,8 +51,11 @@ export default class MyDocument extends Document {
           <meta charSet="utf-8" />
           <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
 
-          <link rel="shortcut icon" href="../../assets/img/favicon.ico" type="image/x-icon"/>
-          <link rel="icon" href="../../assets/img/favicon.ico" type="image/x-icon"/>
+          <link rel="shortcut icon" href="../assets/img/{favicon}" type="image/x-icon"/>
+          <link rel="icon" href="../assets/img/{favicon}" type="image/x-icon"/>
+
+          <title>Adriana Lima - Portfólio 2</title>
+
         </Head>
         <body>
           <Main />

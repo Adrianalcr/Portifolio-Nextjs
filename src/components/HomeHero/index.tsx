@@ -10,7 +10,7 @@ import avatar from '../../assets/img/eu.png';
 
 function HomeHero() {
     return (
-        <Container>
+        <Container data-aos="fade-up">
             <Image src={avatar} alt="Avatar" />
             <div>
                 <TextContainer>
