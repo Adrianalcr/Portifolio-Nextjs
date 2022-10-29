@@ -3,16 +3,16 @@ A portfolio model was developed in react.js, typescript and next.js, with other 
 
 ### Screenshots
 
-![Screenshot](./public/img/Sobre.png)
+![Screenshot](./public/imagens/Sobre.png)
 
 <div style="align: center; display: flex; flex-direction: row">
-  <img src="./public/img/Experiencia.png" width="350" title="Screenshot">
-  <img src="./public/img/Portfolio.png" width="350" alt="Screenshot">
-  <img src="./public/img/UltimosProjetos.png" width="350" alt="Screenshot">
-  <img src="./public/img/Equipe.png" width="350" alt="Screenshot">
-  <img src="./public/img/Skills1.png" width="350" alt="Screenshot">
-  <img src="./public/img/Skills2.png" width="350" alt="Screenshot">
-  <img src="./public/img/Contato.png" width="350" alt="Screenshot">
+  <img src="./public/imagens/Experiencia.png" width="350" title="Screenshot">
+  <img src="./public/imagens/Portfolio.png" width="350" alt="Screenshot">
+  <img src="./public/imagens/UltimosProjetos.png" width="350" alt="Screenshot">
+  <img src="./public/imagens/Equipe.png" width="350" alt="Screenshot">
+  <img src="./public/imagens/Skills1.png" width="350" alt="Screenshot">
+  <img src="./public/imagens/Skills2.png" width="350" alt="Screenshot">
+  <img src="./public/imagens/Contato.png" width="350" alt="Screenshot">
 </div>
 
 <!--INSTALLATION-->
