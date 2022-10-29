@@ -3,6 +3,12 @@ import TitulosSec from '../TitulosSec';
 import ProjetosItens from './ProjetosItens';
 import { Container } from './styles';
 
+const breakPoints = [
+    { width: 1, itemsToShow: 1 },
+    { width: 550, itemsToShow: 2, itemsToScroll: 2 },
+    { width: 768, itemsToShow: 3 },
+    { width: 1200, itemsToShow: 4 },
+];
 
 function Projetos() {
     return (
@@ -10,7 +16,7 @@ function Projetos() {
             <Container data-aos="fade-up">
                 <TitulosSec titulo1="Projetos" descricao1="Desenvolvidos" />
                 <section>
-                    <Carousel  itemsToShow={4} autoPlaySpeed={1500} itemPadding={[0, 10]} >
+                    <Carousel breakPoints={breakPoints} itemPadding={[0, 10]} >
                         <ProjetosItens skills="Cliente1" titulo2="www.seucliente.com.br" />
                         <ProjetosItens skills="Cliente2" titulo2="www.seucliente.com.br" />
                         <ProjetosItens skills="Cliente3" titulo2="www.seucliente.com.br" />

@@ -4,11 +4,13 @@ import TitulosSec from '../TitulosSec';
 
 import Image from 'next/image';
 import avatar from '../../assets/img/eu.png';
-import reactJS from '../../assets/img/reactJS.png';
-import typeJS from '../../assets/img/typeJS.png';
-import vercel from '../../assets/img/vercel.png';
-import vueJS from'../../assets/img/vueJS.png';
-import javaScript  from'../../assets/img/javaScript.png';
+
+const breakPoints = [
+  { width: 1, itemsToShow: 1 },
+  { width: 550, itemsToShow: 2, itemsToScroll: 2 },
+  { width: 768, itemsToShow: 3 },
+  { width: 1200, itemsToShow: 4 },
+];
 
 function Equipe() {
   return (
@@ -17,7 +19,7 @@ function Equipe() {
         <TitulosSec titulo1="Colaboradores" descricao1="Equipe"/>
 
         <section>
-            <Carousel itemsToScroll={4} itemsToShow={4} enableAutoPlay autoPlaySpeed={1500} itemPadding={[0, 10]}>
+            <Carousel breakPoints={breakPoints} enableAutoPlay autoPlaySpeed={1500} itemPadding={[0, 10]}>
               <Item><Image src={avatar} alt="Eu" /></Item>
               <Item><Image src={avatar} alt="Eu" /></Item>
               <Item><Image src={avatar} alt="Eu" /></Item>

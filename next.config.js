@@ -1,5 +1,8 @@
 module.exports = {
   swcMinify: true,
+  images: {
+    unoptimized: true,
+  },
   Image(config) {
     config.module.rules.push({
       test: /\.svg$/,
