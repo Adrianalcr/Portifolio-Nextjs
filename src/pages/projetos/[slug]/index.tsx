@@ -32,7 +32,7 @@ export default function Projeto({ projeto }: ProjetoProps) {
   return (
     <ProjetoContainer>
       <Head>
-        <title>{projeto.title}</title>
+        <title>{projeto.title}Adriana Lima - Portfólio 2</title>
         <meta name="description" content={projeto.description} />
         <meta property="og:image" content={projeto.thumbnail} />
         <meta property="og:image:secure_url" content={projeto.thumbnail} />
