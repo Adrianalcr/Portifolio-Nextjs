@@ -76,8 +76,8 @@ export const Nav = styled.nav`
         position: relative;
         display: flex;
         flex-direction: column;
-        top: 25px;
-        left: 25px;
+        top: 1px;
+        padding: 25px;
         z-index: 1;
         -webkit-user-select: none;
         user-select: none;

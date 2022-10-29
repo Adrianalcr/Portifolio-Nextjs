@@ -21,7 +21,7 @@ function Equipe() {
         <TitulosSec titulo1="Colaboradores" descricao1="Equipe"/>
 
         <section>
-            <Carousel breakPoints={breakPoints} enableAutoPlay autoPlaySpeed={1500} itemPadding={[0, 10]}>
+            <Carousel breakPoints={breakPoints} itemPadding={[0, 10]}>
               <Item><Image src={avatar} alt="Eu" /></Item>
               <Item><Image src={avatar} alt="Eu" /></Item>
               <Item><Image src={avatar} alt="Eu" /></Item>
