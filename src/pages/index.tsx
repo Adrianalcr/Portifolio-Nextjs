@@ -42,6 +42,27 @@ export default function Home({ projeto }: HomeProps) {
 
   return (
     <HomeContainer>
+      <Head>
+        <title>Adriana Lima - Portfólio 2</title>
+        <meta
+          name="description"
+          content="Exemplo de portfolio em React.js, Typescript e Next.js, integrado com vercel!"
+        />
+        <meta property="og:image" content="/ogimage.png" />
+        <meta property="og:image:secure_url" content="/ogimage.png" />
+        <meta name="twitter:image" content="/ogimage.png" />
+        <meta name="twitter:image:src" content="/ogimage.png" />
+        <meta
+          property="og:description"
+          content="Exemplo de portfolio em React.js, Typescript e Next.js, integrado com vercel!"
+        />
+        
+        <link rel="shortcut icon" href="../assets/img/favicon.ico" type="image/x-icon"/>
+        <link rel="icon" href="../assets/img/favicon.ico" type="image/x-icon"/>
+
+        <script async defer src="https://static.cdn.prismic.io/prismic.js?new=true&repo=projetonextjs"></script>
+      </Head>
+      
       <Header/>
 
       <main className="container">
