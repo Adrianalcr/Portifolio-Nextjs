@@ -21,7 +21,7 @@ A portfolio model was developed in react.js, typescript and next.js, with other 
 [![Next.js](https://img.shields.io/badge/NextJs-blue)](https://nextjs.org/)
 [![React.js](https://img.shields.io/badge/-ReactJs-blue)](https://pt-br.reactjs.org/)
 [![Typescript](https://img.shields.io/badge/-Typescript-blue)](https://www.typescriptlang.org/)
-[![Prismic](https://prismic.io/badge/-blue)](https://prismic.io/docs/)
+[![Prismic](https://img.shields.io/badge/-Typescript-blue)](https://prismic.io/docs/)
 
 <br/>
 
