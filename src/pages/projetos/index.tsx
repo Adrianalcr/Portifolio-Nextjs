@@ -23,7 +23,7 @@ export default function Projetos({ projetos }: ProjetoProps) {
   return (
     <ProjetosContainer>
       <Head>
-        <title>Portfolio em ReactJS e NextJS</title>
+        <title>Adriana Lima - Portfólio 2</title>
         <meta
           name="description"
           content="Exemplo de portfolio em React.js, Typescript e Next.js, integrado com vercel!"
@@ -36,6 +36,10 @@ export default function Projetos({ projetos }: ProjetoProps) {
           property="og:description"
           content="Exemplo de portfolio em React.js, Typescript e Next.js, integrado com vercel!"
         />
+        
+        <link rel="shortcut icon" href="../assets/img/favicon.ico" type="image/x-icon"/>
+        <link rel="icon" href="../assets/img/favicon.ico" type="image/x-icon"/>
+
         <script async defer src="https://static.cdn.prismic.io/prismic.js?new=true&repo=projetonextjs"></script>
       </Head>
 
