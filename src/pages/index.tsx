@@ -71,7 +71,6 @@ export default function Home({ projetos }: HomeProps) {
         <Experiencias/>        
         <ProjetosCard/>
         <Projetos projetos={projetos}/>
-        <Equipe/>
         <Conhecimentos/>
         <FormContact/>
       </main>
