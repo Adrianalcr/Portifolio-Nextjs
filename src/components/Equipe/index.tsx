@@ -4,6 +4,11 @@ import TitulosSec from '../TitulosSec';
 
 import Image from 'next/image';
 import avatar from '../../assets/img/eu.png';
+import avatar1 from '../../assets/img/eu.png';
+import avatar2 from '../../assets/img/eu.png';
+import avatar3 from '../../assets/img/eu.png';
+import avatar4 from '../../assets/img/eu.png';
+import avatar5 from '../../assets/img/eu.png';
 
 const breakPoints = [
   { width: 1, itemsToShow: 1 },
@@ -23,11 +28,11 @@ function Equipe() {
         <section>
             <Carousel breakPoints={breakPoints}>
               <Item><Image src={avatar} alt="Eu" /></Item>
-              <Item><Image src={avatar} alt="Eu" /></Item>
-              <Item><Image src={avatar} alt="Eu" /></Item>
-              <Item><Image src={avatar} alt="Eu" /></Item>
-              <Item><Image src={avatar} alt="Eu" /></Item>
-              <Item><Image src={avatar} alt="Eu" /></Item>
+              <Item><Image src={avatar1} alt="Eu" /></Item>
+              <Item><Image src={avatar2} alt="Eu" /></Item>
+              <Item><Image src={avatar3} alt="Eu" /></Item>
+              <Item><Image src={avatar4} alt="Eu" /></Item>
+              <Item><Image src={avatar5} alt="Eu" /></Item>
             </Carousel>                  
         </section> 
       </Container>
