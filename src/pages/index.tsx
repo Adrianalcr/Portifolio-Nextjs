@@ -11,12 +11,12 @@ import { HomeContainer } from '../styles/HomeStyles';
 import Header from '../components/Header';
 import HomeHero from '../components/HomeHero';
 import Experiencias from '../components/Experiencias';
-import Projetos from '../components/Projeto';
+import ProjetosCard from '../components/ProjetosCard';
 import Equipe from '../components/Equipe';
 import FormContact from '../components/FormContact';
 import Footer from '../components/Footer';
 import ScrollUp from '../components/ScrollUp';
-import Projeto from '../components/Projetos';
+import Projetos from '../components/Projetos';
 import Conhecimentos from '../components/Conhecimentos';
 
 import 'aos/dist/aos.css';
@@ -35,7 +35,7 @@ interface HomeProps{
   projetos: IProjeto[];
 }
 
-export default function Home({ projeto }: HomeProps) {
+export default function Home({ projetos }: HomeProps) {
   useEffect(() => {
     Aos.init({ duration: 1500 });
   }, []);
@@ -60,16 +60,17 @@ export default function Home({ projeto }: HomeProps) {
         <link rel="shortcut icon" href="../assets/img/favicon.ico" type="image/x-icon"/>
         <link rel="icon" href="../assets/img/favicon.ico" type="image/x-icon"/>
 
-        <script async defer src="https://static.cdn.prismic.io/prismic.js?new=true&repo=projetonextjs"></script>
-      </Head>
+        <script async defer src="https://static.cdn.prismic.io/prismic.js?new=true&repo=portifolionextjs"></script>      
+        
+        </Head>
       
       <Header/>
 
       <main className="container">
         <HomeHero/>
-        <Experiencias/>
-        <Projetos/>
-        <Projeto projetos={projeto}/>
+        <Experiencias/>        
+        <ProjetosCard/>
+        <Projetos projetos={projetos}/>
         <Equipe/>
         <Conhecimentos/>
         <FormContact/>
@@ -86,7 +87,7 @@ export const getStaticProps: GetStaticProps = async () => {
   const prismic = getPrismicClient();
 
   const projectResponse = await prismic.query(
-    [Prismic.Predicates.at('document.type', 'pro')],
+    [Prismic.Predicates.at('document.type', 'projeto')],
     { orderings: '[document.first_publication_date desc]' }
   );
 

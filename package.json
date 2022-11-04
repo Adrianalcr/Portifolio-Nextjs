@@ -1,5 +1,5 @@
 {
-  "name": "Portifolio-Nextjs",
+  "name": "portifolio-nextjs",
   "author": "Adriana Lima",
   "version": "1.0",
   "private": true,
@@ -13,7 +13,7 @@
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
     "@mui/material": "^5.10.11",
-    "@prismicio/client": "^5.1.0",
+    "@prismicio/client": "^5.1.1",
     "@prismicio/helpers": "^2.3.5",
     "@prismicio/next": "^0.1.7",
     "@prismicio/react": "^2.5.0",

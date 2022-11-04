@@ -12,7 +12,7 @@ const breakPoints = [
     { width: 1750, itemsToShow: 6 },
   ];
 
-function Projetos() {
+function Projeto() {
     return (
         <>
             <Container data-aos="fade-up">
@@ -31,4 +31,4 @@ function Projetos() {
         </>
     )
 }
-export default Projetos;
+export default Projeto;

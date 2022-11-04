@@ -22,8 +22,9 @@
   "include": [
     "next-env.d.ts",
     "**/*.ts",
-    "**/*.tsx"
-, "src/components/Slides/index.js"  ],
+    "**/*.tsx",
+    "src/components/Slides/index.js"  
+  ],
   "exclude": [
     "node_modules"
   ]

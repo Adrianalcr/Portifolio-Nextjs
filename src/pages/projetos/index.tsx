@@ -40,7 +40,8 @@ export default function Projetos({ projetos }: ProjetoProps) {
         <link rel="shortcut icon" href="../assets/img/favicon.ico" type="image/x-icon"/>
         <link rel="icon" href="../assets/img/favicon.ico" type="image/x-icon"/>
 
-        <script async defer src="https://static.cdn.prismic.io/prismic.js?new=true&repo=projetonextjs"></script>
+        <script async defer src="https://static.cdn.prismic.io/prismic.js?new=true&repo=portifolionextjs"></script>      
+       
       </Head>
 
       <Header />
@@ -63,7 +64,7 @@ export const getStaticProps: GetStaticProps = async () => {
   const prismic = getPrismicClient();
 
   const projectResponse = await prismic.query(
-    [Prismic.Predicates.at('document.type', 'pro')],
+    [Prismic.Predicates.at('document.type', 'projeto')],
     { orderings: '[document.first_publication_date desc]' }
   );
 

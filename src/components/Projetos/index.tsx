@@ -22,7 +22,7 @@ function Projetos({ projetos }: ProjetosProps) {
       <TitulosSec titulo1="Ultimos Projetos" />
 
       <section>
-        {projetos?.map(projeto => (
+        {projetos?.slice(0, 3).map(projeto => (
           <ProjetoItem
             key={projeto.slug}
             img={projeto.thumbnail}

@@ -9,7 +9,7 @@ const breakPoints = [
   { width: 1, itemsToShow: 1 },
   { width: 550, itemsToShow: 2, itemsToScroll: 2, pagination: false },
   { width: 850, itemsToShow: 3 },
-  { width: 1150, itemsToShow: 4, itemsToScroll: 3, itemPadding: [0, 10] },
+  { width: 1150, itemsToShow: 4, itemsToScroll: 3 },
   { width: 1450, itemsToShow: 5 },
   { width: 1750, itemsToShow: 6 },
 ];
@@ -21,7 +21,7 @@ function Equipe() {
         <TitulosSec titulo1="Colaboradores" descricao1="Equipe"/>
 
         <section>
-            <Carousel breakPoints={breakPoints}>
+            <Carousel breakPoints={breakPoints} itemPadding={[0, 10]}>
               <Item><Image src={avatar} alt="Eu" /></Item>
               <Item><Image src={avatar} alt="Eu" /></Item>
               <Item><Image src={avatar} alt="Eu" /></Item>

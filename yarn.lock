@@ -1424,10 +1424,10 @@
     "@prismicio/types-internal" "0.2.10"
     "tslib" "^2.3.1"
 
-"@prismicio/client@^5.1.0", "@prismicio/client@^6.0.0":
-  "integrity" "sha512-LCb+arVVxJOoPM+8qfLCC/Dqse7mh+Q1k3oo5W5Uzu7vVO+vtc7CUYHxgCDkvekakYHc9407kwWu65ErZw+CPQ=="
-  "resolved" "https://registry.npmjs.org/@prismicio/client/-/client-5.1.0.tgz"
-  "version" "5.1.0"
+"@prismicio/client@^5.1.1", "@prismicio/client@^6.0.0":
+  "integrity" "sha512-0wtQrPZCATBmgLklQYgjSrmz3YtMP+5lHakv30MUVyUez2LVoukhVJWTj1uXwsOz2Yh2xLkAp+PHqTOiUvaM/Q=="
+  "resolved" "https://registry.npmjs.org/@prismicio/client/-/client-5.1.1.tgz"
+  "version" "5.1.1"
   dependencies:
     "cross-fetch" "^3.0.6"
 

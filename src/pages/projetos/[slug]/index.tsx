@@ -3,7 +3,7 @@ import Prismic from '@prismicio/client';
 import { useRouter } from 'next/router';
 import Head from 'next/head';
 import { getPrismicClient } from '../../../services/prismic';
-import { ProjetoContainer } from '../../../styles/ProjetoStyles';
+import { ProjetoContainer } from '../../../styles/ProjetosStyles';
 import { PrismicRichText, useFirstPrismicDocument } from '@prismicio/react';
 import BannerProjeto from '../../../components/BannerProjeto';
 import Header from '../../../components/Header';
@@ -41,7 +41,7 @@ export default function Projeto({ projeto }: ProjetoProps) {
         <meta property="og:description" content={projeto.description} />
         <link rel="shortcut icon" href="../assets/img/favicon.ico" type="image/x-icon"/>
         <link rel="icon" href="../assets/img/favicon.ico" type="image/x-icon"/>
-        <script async defer src="https://static.cdn.prismic.io/prismic.js?new=true&repo=projetonextjs"></script>
+        <script async defer src="https://static.cdn.prismic.io/prismic.js?new=true&repo=portifolionextjs"></script>
       </Head>
 
       <Header />
@@ -63,8 +63,9 @@ export default function Projeto({ projeto }: ProjetoProps) {
 
 export const getStaticPaths: GetStaticPaths = async () => {
   const prismic = getPrismicClient();
+
   const projetos = await prismic.query([
-    Prismic.predicates.at('document.type', 'pro')
+    Prismic.predicates.at('document.type', 'projeto')
   ]);
 
   const paths = projetos.results.map(projeto => ({
@@ -83,7 +84,7 @@ export const getStaticProps: GetStaticProps = async context => {
   const prismic = getPrismicClient();
   const { slug } = context.params;
 
-  const response = await prismic.getByUID('pro', String(slug), {});
+  const response = await prismic.getByUID('projeto', String(slug), {});
 
   const projeto = {
     slug: response.uid,
@@ -96,7 +97,7 @@ export const getStaticProps: GetStaticProps = async context => {
 
   return {
     props: {
-      projeto
+      projetos
     },
     revalidate: 86400
   };
